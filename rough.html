@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+<div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header">
+   
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Preface</p>
+    <p>Introduction</p>
+    <p>More About</p>
+    
+  </div>
+ 
+</div>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid mt-1">
+  
+  <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+ Home
+  </button>
+  
+ <button type="button" class="btn btn-success">About</button>
+
+   <button type="button" class="btn btn-success" data-bs-toggle="popover" title=" Short Note" data-bs-content="Prehistory, also called pre-literary history, is the period of human history between the first known use of stone tools by hominins c. 3.3 million years ago and the beginning of recorded history with the invention of writing systems.">
+    Pre History
+  </button>
+   <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Post History " data-bs-content="Postal history is the study of postal systems and how they operate and, or, the study of the use of postage stamps and covers and associated postal artifacts illustrating historical episodes in the development of postal systems.">
+    Post History
+  </button>
+   
+    <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Important dates" data-bs-content="1761: Third and last battle of Panipat.
+1829: Prohibition of Sati.
+1905: Partition of Bengal.
+1930: Dandi March.
+1931: Pact between Gandhi and Irwin.
+1935: Government of India Act.
+1945: Trial of the national army.
+1947: Division of India.
+">
+    Important Dates
+  </button>
+    
+       
+</div>
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">More</a>
+        </li>
+       
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search...">
+             
+  <button class="btn btn-primary">
+    <span class="spinner-border spinner-border-sm">
+   </span>
+    
+  </button>
+       
+      </form>
+      
+  
+    </div>
+  </div>
+</nav><div class="row row-cols-1">
+  
+<h2 class="mt-3">Pre Historic Period</h2><div class="row row-cols-1">
+    
+  
+<p class="text-success">Prehistory, also called pre-literary history, is the period of human history between the first known use of stone tools by hominins c. 3.3 million years ago and the beginning of recorded history with the invention of writing systems. The use of symbols, marks, and images appears very early among humans, but the earliest known writing systems appeared c. 5,200 years ago. It took thousands of years for writing systems to be widely adopted, with writing spreading to almost all cultures by the 19th century. The end of prehistory therefore came at different times in different places, and the term is less often used in discussing societies where prehistory ended relatively recently.
+
+In the early Bronze Age, Sumer in Mesopotamia, the Indus Valley Civilisation, and ancient Egypt were the first civilizations to develop their own scripts and keep historical records, with their neighbours following. Most other civilizations reached their end of prehistory during the following Iron Age. The three-age division of prehistory into Stone Age, Bronze Age, and Iron Age remains in use for much of Eurasia and North Africa, but is not generally used in those parts of the world where the working of hard metals arrived abruptly from contact with Eurasian cultures, such as Oceania, Australasia, much of Sub-Saharan Africa, and parts of the Americas. With some exceptions in pre-Columbian civilizations in the Americas, these areas did not develop complex writing systems before the arrival of Eurasians, so their prehistory reaches into relatively recent periods; for example, 1788 is usually taken as the end of the prehistory of Australia.
+
+The period when a culture is written about by others, but has not developed its own writing system, is often known as the protohistory of the culture. By definition, there are no written records from human prehistory, which can only be known from material archaeological and anthropological evidence: prehistoric materials and human remains. These were at first understood by the collection of folklore and by analogy with pre-literate societies observed in modern times. The key step to understanding prehistoric evidence is dating, and reliable dating techniques have developed steadily since the nineteenth century. Further evidence has come from the reconstruction of ancient spoken languages. More recent techniques include forensic chemical analysis to reveal the use and provenance of materials, and genetic analysis of bones to determine kinship and physical characteristics of prehistoric peoples.</p>
+
+  <h1 class="display-6">Fill the form given below for registering for the live session for more detail</h1>
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    
+  </form>
+</div>
+
+<div class="container mt-3">
+ 
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Submit
+  </button>
+</div>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Registered...</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      
+      <div class="modal-body">
+       We will soon contact you,Thankyou!
+      </div>
+
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Ok</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container mt-3">
+ 
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
